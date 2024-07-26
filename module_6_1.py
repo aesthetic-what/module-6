@@ -32,7 +32,7 @@ class Predator(Animal):
 
 class Mammal(Animal):
     def eat(self, food):
-        if Plant.edible != Fruit.edible and Plant.edible != Flower.edible:
+        if Plant.edible != Fruit.edible and Plant.edible == Flower.edible:
             print(f"{self.name} съел {food.name}")
         else:
             print(f"{self.name} не стал есть {food.name}")
